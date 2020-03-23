@@ -1,3 +1,17 @@
+/*
+    Theme Name: Tranquil WP
+    Theme URI: https://tranquilspatheme.com
+    Author: Telmo Sampaio
+    Author URI: https://wordpress.org/
+    Description: Tranquil Spa Theme for WordPress
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: tranquilwp
+    Tags: translation-ready, tight-sidebar, custom-header, featured-images, custom-menu
+   
+*/
+
 body {
     font-family: 'Merriweather', serif;
 }

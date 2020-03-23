@@ -1,53 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<?php
+	/*
+	*	The main template file
+	*/
+?>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
-		<!-- Custom Font -->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="./css/custom.css">
-
-    <title>Tranquil Spa</title>
-  </head>
-  <body>
-		<header>
-			<nav class="navbar navbar-expand-md navbar-light bg-light">
-				<a class="navbar-brand" href="#">Tranquil & Spa</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog.html">Blog</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-
-			<div class="container-fluid">
-				<div class="row position-relative d-flex justify-content-center align-items-center text-center">
-					<img src="./images/lake.jpg" alt="lake background" class="header_img">
-					<div class="position-absolute feature-bg">
-						<p class="feature-text">Full responsive<br/> PREMIUM SPA THEME<br/> FOR WORDPRESS</p>
-					</div>
-				</div>
-			</div>
-		</header>
+	<?php get_header() ?>
 
 		<div class="container-fluid text-center py-5">
 			<div class="row">
@@ -224,44 +181,4 @@
 		</div> <!-- Container -->
 
 		<!-- Footer Section -->
-		<footer class="container-fluid py-5">
-			<div class="row">
-				<div class="col-sm-4">
-					<h5>Stay Connected</h5>
-					<form>
-						<div class="form-row form-group">
-							<div class="col-md-8">
-								<input type="email" class="form-control" placeholder="Email Address">
-							</div>
-							<div class="col-md-4">
-								<button type="submit" class="btn btn-primary">Sign Up <i class="fas fa-angle-double-right"></i></button>
-							</div>
-						</div>
-					</form>
-					<!-- Social Media Icons -->
-					<i class="fab fa-facebook-square fa-2x"></i>
-					<i class="fab fa-twitter-square fa-2x"></i>
-					<i class="fab fa-instagram fa-2x"></i>
-					<i class="fab fa-pinterest-square fa-2x"></i>
-				</div>
-				<div class="col-sm-4">
-					<h5>Out Setting:</h5>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil omnis animi iure repellendus quos! Deleniti, quisquam voluptates? Doloremque autem id consequuntur ipsum natus, atque vel rem nulla animi labore obcaecati!</p>
-				</div>
-				<div class="col-sm-4">
-					<h5>Navigation</h5>
-					<ul class="list-group">
-						<li class="list-group-item"><a href="blog.html">Blog</a></li>
-						<li class="list-group-item"><a href="contact.html">Contact Us</a></li>
-						<li class="list-group-item"><a href="">Privacy Policy</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
-</html>
+		<?php get_footer() ?>

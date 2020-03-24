@@ -3,7 +3,7 @@
 * The template for displaying the footer
 */
 ?>
-<footer class="container-fluid py-5">
+		<footer class="container-fluid py-5">
 			<div class="row">
 				<div class="col-sm-4">
 					<h5>Stay Connected</h5>
@@ -37,11 +37,6 @@
 				</div>
 			</div>
 		</footer>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
 	
 	<?php wp_footer(); ?>
   </body>

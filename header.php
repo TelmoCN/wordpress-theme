@@ -14,15 +14,6 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
-		<!-- Custom Font -->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="./custom.css">
 
 		<?php wp_head(); ?>
   </head>
@@ -33,16 +24,20 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog.html">Blog</a>
-						</li>
-					</ul>
-				</div>
+				
+					<?php
+						wp_nav_menu( array(
+							'theme_location'  => 'primary',
+							'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+							'container'       => 'div',
+							'container_class' => 'collapse navbar-collapse justify-content-end',
+							'container_id'    => 'navbarNav',
+							'menu_class'      => 'navbar-nav',
+							'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'          => new WP_Bootstrap_Navwalker(),
+						) );
+					?>
+				
 			</nav>
 
 			<div class="container-fluid">
